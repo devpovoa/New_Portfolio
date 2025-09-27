@@ -65,7 +65,7 @@ export function Hero() {
               Desenvolvedor <span className="text-indigo-400 font-semibold animate-glow-pulse">Python, Django e FastAPI</span>, 
               com foco em arquiteturas de microserviços e APIs REST robustas. 
               <span className="text-violet-400 font-semibold animate-glow-pulse"> 13 anos de experiência</span> em análise 
-              de processos combinados com projetos autorais sólidos desde 2024.
+              de processos, combinados com projetos autorais sólidos desde 2024.
             </p>
             
             {/* Tech Stack Preview */}
