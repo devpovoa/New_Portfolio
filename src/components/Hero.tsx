@@ -31,18 +31,18 @@ export function Hero() {
             
             {/* Name */}
             <h1 className="space-y-2">
-              <div className="text-6xl md:text-7xl font-bold leading-tight animate-slide-up stagger-3">
-                <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent animate-gradient-shift">
+              <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-slide-up stagger-3">
+                <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent animate-gradient-shift block">
                   Thiago
                 </span>
               </div>
-              <div className="text-6xl md:text-7xl font-bold leading-tight animate-slide-up stagger-4">
-                <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent animate-gradient-shift">
+              <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-slide-up stagger-4">
+                <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent animate-gradient-shift block">
                   Figueiredo
                 </span>
               </div>
-              <div className="text-6xl md:text-7xl font-bold leading-tight animate-slide-up stagger-5">
-                <span className="bg-gradient-to-r from-violet-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent animate-gradient-shift">
+              <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-slide-up stagger-5">
+                <span className="bg-gradient-to-r from-violet-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent animate-gradient-shift block">
                   Povoa
                 </span>
               </div>
@@ -52,7 +52,7 @@ export function Hero() {
             <div className="flex items-center gap-4 animate-scale-in stagger-6">
               <div className="flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-violet-600 px-4 py-2 rounded-full hover-glow animate-glow-pulse">
                 <HiCodeBracket className="h-4 w-4 text-white animate-bounce-in stagger-7" />
-                <span className="text-white text-sm font-medium">Desenvolvedor Back-End Python</span>
+                <span className="text-white text-xs sm:text-sm font-medium whitespace-nowrap">Desenvolvedor Back-End Python</span>
               </div>
               <div className="hidden md:flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-2 rounded-full hover-scale">
                 <HiCpuChip className="h-4 w-4 text-indigo-400 animate-bounce-in stagger-8" />
@@ -61,11 +61,16 @@ export function Hero() {
             </div>
             
             {/* Description */}
-            <p className="text-xl text-gray-300 leading-relaxed max-w-2xl animate-slide-up delay-700">
-              Desenvolvedor <span className="text-indigo-400 font-semibold animate-glow-pulse">Python, Django e FastAPI</span>, 
-              com foco em arquiteturas de microserviços e APIs REST robustas. 
-              <span className="text-violet-400 font-semibold animate-glow-pulse"> 13 anos de experiência</span> em análise 
-              de processos, combinados com projetos autorais sólidos desde 2024.
+            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl animate-slide-up delay-700">
+              Desenvolvedor{' '}
+              <span className="text-indigo-400 font-semibold animate-glow-pulse whitespace-nowrap">
+                Python, Django e FastAPI
+              </span>,{' '}
+              com foco em arquiteturas de microserviços e APIs REST robustas.{' '}
+              <span className="text-violet-400 font-semibold animate-glow-pulse whitespace-nowrap">
+                13 anos de experiência
+              </span>{' '}
+              em análise de processos, combinados com projetos autorais sólidos desde 2024.
             </p>
             
             {/* Tech Stack Preview */}

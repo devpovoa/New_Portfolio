@@ -39,7 +39,7 @@ export function Footer() {
       <div className="container mx-auto max-w-6xl px-6 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <h3 className="text-2xl font-bold mb-2">
+            <h3 className="text-xl sm:text-2xl font-bold mb-2">
               <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent">
                 Thiago Figueiredo
               </span>
@@ -82,13 +82,14 @@ export function Footer() {
           <p className="text-gray-400 text-sm mb-2">
             © {currentYear} Thiago Figueiredo Povoa. Todos os direitos reservados.
           </p>
-          <p className="text-gray-500 text-xs">
-            Desenvolvido com 
-            <span className="text-indigo-400 font-semibold"> React</span>, 
-            <span className="text-blue-400 font-semibold"> TypeScript</span> e 
-            <span className="text-violet-400 font-semibold"> TailwindCSS</span>
-            <span className="mx-2">•</span>
-            <span className="text-green-400 font-semibold">
+          <p className="text-gray-500 text-xs flex flex-wrap items-center justify-center gap-1">
+            <span>Desenvolvido com</span>
+            <span className="text-indigo-400 font-semibold whitespace-nowrap">React</span>,
+            <span className="text-blue-400 font-semibold whitespace-nowrap">TypeScript</span>
+            <span>e</span>
+            <span className="text-violet-400 font-semibold whitespace-nowrap">TailwindCSS</span>
+            <span className="hidden sm:inline mx-2">•</span>
+            <span className="text-green-400 font-semibold whitespace-nowrap block sm:inline w-full sm:w-auto text-center sm:text-left">
               Disponível para oportunidades Back-End Python
             </span>
           </p>

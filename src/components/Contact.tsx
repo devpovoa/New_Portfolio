@@ -72,19 +72,24 @@ export function Contact() {
             <div className="w-2 h-2 bg-indigo-400 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-gray-300 uppercase tracking-wider">Entre em Contato</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent block">
               Fale
             </span>
-            <br />
-            <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent block">
               Comigo
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Interessado em conversar sobre <span className="font-semibold text-indigo-400">oportunidades de desenvolvimento back-end</span> ou 
-            projetos inovadores? Entre em contato pelos canais abaixo. 
-            Vamos <span className="px-2 py-1 bg-gradient-to-r from-indigo-500/20 to-violet-500/20 border border-indigo-400/30 rounded-md font-bold text-indigo-300">construir soluções escaláveis</span> juntos!
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Interessado em conversar sobre{' '}
+            <span className="font-semibold text-indigo-400 whitespace-nowrap">
+              oportunidades de desenvolvimento back-end
+            </span>{' '}
+            ou projetos inovadores? Entre em contato pelos canais abaixo. Vamos{' '}
+            <span className="inline-block px-2 py-1 bg-gradient-to-r from-indigo-500/20 to-violet-500/20 border border-indigo-400/30 rounded-md font-bold text-indigo-300 whitespace-nowrap">
+              construir soluções escaláveis
+            </span>{' '}
+            juntos!
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -189,7 +194,7 @@ export function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-lg">{contact.name}</h4>
-                      <p className="text-sm text-gray-400">
+                      <p className="text-sm text-gray-400 break-all">
                         {contact.description}
                       </p>
                     </div>

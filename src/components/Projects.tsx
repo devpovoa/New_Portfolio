@@ -151,19 +151,27 @@ export function Projects() {
             <div className="w-2 h-2 bg-indigo-400 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-gray-300 uppercase tracking-wider">Meu Portfólio</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent block">
               Projetos
             </span>
-            <br />
-            <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent block">
               Autorais
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Soluções completas desenvolvidas desde <span className="px-2 py-1 bg-gradient-to-r from-indigo-500/20 to-violet-500/20 border border-indigo-400/30 rounded-md font-bold text-indigo-300">janeiro de 2024</span>, 
-            demonstrando expertise em <span className="font-semibold text-indigo-400">back-end Python, APIs REST</span> e 
-            <span className="font-semibold text-violet-400">arquiteturas modernas escaláveis</span>.
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Soluções completas desenvolvidas desde{' '}
+            <span className="inline-block px-2 py-1 bg-gradient-to-r from-indigo-500/20 to-violet-500/20 border border-indigo-400/30 rounded-md font-bold text-indigo-300 whitespace-nowrap">
+              janeiro de 2024
+            </span>,{' '}
+            demonstrando expertise em{' '}
+            <span className="font-semibold text-indigo-400 whitespace-nowrap">
+              back-end Python, APIs REST
+            </span>{' '}
+            e{' '}
+            <span className="font-semibold text-violet-400 whitespace-nowrap">
+              arquiteturas modernas escaláveis
+            </span>.
           </p>
         </div>
 

@@ -86,19 +86,27 @@ export function Skills() {
             <HiAcademicCap className="h-4 w-4 text-indigo-400" />
             <span className="text-sm font-medium text-gray-300 uppercase tracking-wider">Formação & Habilidades</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent block">
               Expertise
             </span>
-            <br />
-            <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent block">
               Técnica
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Combinando <span className="font-semibold text-indigo-400">formação acadêmica sólida</span> com 
-            experiência prática em <span className="px-2 py-1 bg-gradient-to-r from-indigo-500/20 to-violet-500/20 border border-indigo-400/30 rounded-md font-bold text-indigo-300">tecnologias modernas</span> de desenvolvimento back-end. 
-            Especializado em <span className="font-semibold text-violet-400">arquiteturas escaláveis e APIs robustas</span>.
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Combinando{' '}
+            <span className="font-semibold text-indigo-400 whitespace-nowrap">
+              formação acadêmica sólida
+            </span>{' '}
+            com experiência prática em{' '}
+            <span className="inline-block px-2 py-1 bg-gradient-to-r from-indigo-500/20 to-violet-500/20 border border-indigo-400/30 rounded-md font-bold text-indigo-300 whitespace-nowrap">
+              tecnologias modernas
+            </span>{' '}
+            de desenvolvimento back-end. Especializado em{' '}
+            <span className="font-semibold text-violet-400 whitespace-nowrap">
+              arquiteturas escaláveis e APIs robustas
+            </span>.
           </p>
         </div>
 
@@ -196,7 +204,7 @@ export function Skills() {
                                   }}
                                 />
                               </div>
-                              <span className="font-medium text-gray-300 group-hover/skill:text-white transition-colors">{skill.name}</span>
+                              <span className="font-medium text-gray-300 group-hover/skill:text-white transition-colors whitespace-nowrap">{skill.name}</span>
                             </div>
                             <div className="flex items-center gap-3">
                               <div className="w-20 h-2 bg-gray-700 rounded-full overflow-hidden">

@@ -19,17 +19,19 @@ export function About() {
             <div className="w-2 h-2 bg-indigo-400 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-gray-300 uppercase tracking-wider">Sobre Mim</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent block">
               Desenvolvedor
             </span>
-            <br />
-            <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent block">
               Back-End
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Combinando <span className="font-semibold text-indigo-400">13 anos de experiência analítica</span> 
+            Combinando{' '}
+            <span className="font-semibold text-indigo-400 whitespace-nowrap">
+              13 anos de experiência analítica
+            </span>{' '}
             com paixão por tecnologia para criar soluções back-end robustas e escaláveis.
           </p>
         </div>
@@ -51,13 +53,16 @@ export function About() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">
-                    Thiago Figueiredo Povoa
+                  <h3 className="text-xl sm:text-2xl font-bold text-white break-words">
+                    <span className="block sm:inline">Thiago Figueiredo</span>{' '}
+                    <span className="block sm:inline">Povoa</span>
                   </h3>
                   <p className="text-indigo-400 font-semibold text-lg">Python Developer</p>
-                  <p className="text-gray-400 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-indigo-400 rounded-full"></span>
-                    Itaboraí, RJ • {currentAge} anos
+                  <p className="text-gray-400 flex items-center gap-2 flex-wrap">
+                    <span className="w-2 h-2 bg-indigo-400 rounded-full flex-shrink-0"></span>
+                    <span className="whitespace-nowrap">Itaboraí, RJ</span>
+                    <span className="hidden sm:inline">•</span>
+                    <span className="whitespace-nowrap">{currentAge} anos</span>
                   </p>
                 </div>
               </div>
@@ -81,7 +86,7 @@ export function About() {
                   </div>
                   <div>
                     <p className="font-medium text-gray-300">Email</p>
-                    <a href="mailto:thiagopovoadev@gmail.com" className="text-indigo-400 hover:text-indigo-300 transition-colors">
+                    <a href="mailto:thiagopovoadev@gmail.com" className="text-indigo-400 hover:text-indigo-300 transition-colors break-all">
                       thiagopovoadev@gmail.com
                     </a>
                   </div>
@@ -93,22 +98,29 @@ export function About() {
           {/* Professional Story */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-white">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white">
                 Minha Jornada
               </h3>
               <div className="space-y-4 text-lg leading-relaxed">
                 <p className="text-gray-300">
-                  <span className="font-semibold text-indigo-400">Desenvolvedor back-end</span> em 
-                  Python, Django e FastAPI, com formação em Ciência da Computação pela 
+                  <span className="font-semibold text-indigo-400 whitespace-nowrap">
+                    Desenvolvedor back-end
+                  </span>{' '}
+                  em Python, Django e FastAPI, com formação em Ciência da Computação pela 
                   Universidade Estácio de Sá (2024).
                 </p>
                 <p className="text-gray-300">
-                  Minha trajetória única combina <span className="px-2 py-1 bg-gradient-to-r from-indigo-500/20 to-violet-500/20 border border-indigo-400/30 rounded-md font-bold text-indigo-300">13 anos de experiência</span> em 
-                  análise e processos na área financeira com projetos autorais sólidos 
-                  desde janeiro de 2024.
+                  Minha trajetória única combina{' '}
+                  <span className="inline-block px-2 py-1 bg-gradient-to-r from-indigo-500/20 to-violet-500/20 border border-indigo-400/30 rounded-md font-bold text-indigo-300 whitespace-nowrap">
+                    13 anos de experiência
+                  </span>{' '}
+                  em análise e processos na área financeira com projetos autorais sólidos desde janeiro de 2024.
                 </p>
                 <p className="text-gray-300">
-                  Focado em <span className="font-semibold text-violet-400">arquiteturas de microserviços</span>, 
+                  Focado em{' '}
+                  <span className="font-semibold text-violet-400 whitespace-nowrap">
+                    arquiteturas de microserviços
+                  </span>,{' '}
                   mensageria assíncrona e containerização, aplicando visão analítica para criar 
                   soluções escaláveis e eficientes.
                 </p>
@@ -116,7 +128,7 @@ export function About() {
             </div>
 
             {/* Stats Cards */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="group relative">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
                 <div className="relative bg-gray-800/90 backdrop-blur-sm border border-gray-700/50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">

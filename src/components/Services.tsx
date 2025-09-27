@@ -46,18 +46,24 @@ export function Services() {
             <div className="w-2 h-2 bg-indigo-400 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-gray-300 uppercase tracking-wider">Minha Trajetória</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent block">
               Experiência
             </span>
-            <br />
-            <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-blue-400 bg-clip-text text-transparent block">
               Profissional
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Trajetória única combinando <span className="font-semibold text-indigo-400">formação sólida em Ciência da Computação</span>, 
-            projetos autorais robustos e <span className="px-2 py-1 bg-gradient-to-r from-indigo-500/20 to-violet-500/20 border border-indigo-400/30 rounded-md font-bold text-indigo-300">13 anos de experiência analítica</span> no setor financeiro.
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Trajetória única combinando{' '}
+            <span className="font-semibold text-indigo-400 whitespace-nowrap">
+              formação sólida em Ciência da Computação
+            </span>,{' '}
+            projetos autorais robustos e{' '}
+            <span className="inline-block px-2 py-1 bg-gradient-to-r from-indigo-500/20 to-violet-500/20 border border-indigo-400/30 rounded-md font-bold text-indigo-300 whitespace-nowrap">
+              13 anos de experiência analítica
+            </span>{' '}
+            no setor financeiro.
           </p>
         </div>
 
@@ -69,9 +75,12 @@ export function Services() {
                   {exp.title}
                 </h3>
                 <div className="space-y-4 text-lg leading-relaxed">
-                  <p className="text-gray-300">
-                    <span className="font-semibold text-indigo-400">{exp.company}</span> • 
-                    <span className="px-2 py-1 bg-gradient-to-r from-indigo-500/20 to-violet-500/20 border border-indigo-400/30 rounded-md font-bold text-indigo-300 ml-2">{exp.period}</span>
+                  <p className="text-gray-300 flex flex-wrap items-center gap-2">
+                    <span className="font-semibold text-indigo-400">{exp.company}</span>
+                    <span className="hidden sm:inline">•</span>
+                    <span className="px-2 py-1 bg-gradient-to-r from-indigo-500/20 to-violet-500/20 border border-indigo-400/30 rounded-md font-bold text-indigo-300 whitespace-nowrap">
+                      {exp.period}
+                    </span>
                   </p>
                   <p className="text-gray-300">
                     {exp.description.split('.').slice(0, 2).join('.')}. 
