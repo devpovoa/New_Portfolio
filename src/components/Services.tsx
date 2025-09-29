@@ -56,7 +56,7 @@ export function Services() {
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Trajetória única combinando{' '}
-            <span className="font-semibold text-indigo-400 whitespace-nowrap">
+            <span className="font-semibold text-indigo-400">
               formação sólida em Ciência da Computação
             </span>,{' '}
             projetos autorais robustos e{' '}

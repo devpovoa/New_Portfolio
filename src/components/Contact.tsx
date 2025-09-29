@@ -82,7 +82,7 @@ export function Contact() {
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Interessado em conversar sobre{' '}
-            <span className="font-semibold text-indigo-400 whitespace-nowrap">
+            <span className="font-semibold text-indigo-400">
               oportunidades de desenvolvimento back-end
             </span>{' '}
             ou projetos inovadores? Entre em contato pelos canais abaixo. Vamos{' '}

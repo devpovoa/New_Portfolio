@@ -88,8 +88,9 @@ export function Footer() {
             <span className="text-blue-400 font-semibold whitespace-nowrap">TypeScript</span>
             <span>e</span>
             <span className="text-violet-400 font-semibold whitespace-nowrap">TailwindCSS</span>
-            <span className="hidden sm:inline mx-2">•</span>
-            <span className="text-green-400 font-semibold whitespace-nowrap block sm:inline w-full sm:w-auto text-center sm:text-left">
+          </p>
+          <p className="text-gray-500 text-xs text-center mt-2">
+            <span className="text-green-400 font-semibold">
               Disponível para oportunidades Back-End Python
             </span>
           </p>
